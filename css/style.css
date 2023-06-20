@@ -1,0 +1,1145 @@
+
+/* --------------------------------- Root Rules--------------------------------- */
+:root{
+  /* Colors */
+    --dark-text: #4E4A4A;
+    --light-text: #fff;
+    --secondary-color:#EFDE6A;
+    --third-color: #73C14A;
+    --border-container: #2a5f31;
+    --dark-orange-color: #D7c22E;
+    --light-button: #E3FFDE;
+    --light-background: #E7F9DE;
+    --black-color: #333333;
+  /* Font sizes */
+    --font-sx: 1.4rem ;
+    --font-s: 1.6rem ;
+    --font-sm:2rem;
+    --font-m:2.4rem ;
+    --font-ml:2.8rem;
+    --font-l: 3.2rem ;
+    --font-xl: 3.6rem ; 
+    --font-xll: 4.1rem;
+    --font-xxl: 4.6rem;
+  
+  /* Spac4remes */
+    --space-xs: 12px;
+    --space-s:  24px;
+    --space-m:  48px;
+    --space-l:  96px;
+}
+
+* {
+  scrollbar-width: 10px;
+  scrollbar-color: var(--dark-orange-color) ;
+}
+
+/* Chrome, Edge, and Safari */
+.light-presentation::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+
+
+.light-presentation::-webkit-scrollbar-track {
+  background: none;
+  width: 30%;
+  height: 10px;
+}
+
+.light-presentation::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 10px;
+  border: 3px solid var(--dark-orange-color);
+  width: 100%;
+  height:10%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%; /* permet de ramener la taille par défaut à 10px (10 / 16 = 0.625) */
+  min-width: 100%;
+
+}
+
+article {
+  width: auto;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: montserrat;
+  font-size: var(--font-s);
+}
+
+h1, h2, h3 {
+  font-family: 'noto sans';
+}
+
+h2{
+  font-size: var(--font-xl);
+}
+
+p {
+  line-height: normal;
+  font-size: 14px;
+}
+
+
+/* --------------------------------- HEADER ------------------------------- */
+
+
+/* --------------------------------- LOGO IG ------------------------------- */
+.menuStart{
+  height: 90%;
+  margin: auto 0;
+}
+.custom-logo {
+  height:90%;
+  margin: auto ;
+  max-width: 140px;
+  overflow: hidden;
+}
+
+header{
+  min-height: 80px;
+}
+
+
+
+/* --------------------------------- MENU ------------------------------- */
+.menu{
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color:var(--light-text);
+  max-width: 100%;
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.081);
+  z-index: 50;
+  position: sticky;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0% 5%;
+  margin: auto;
+}
+.navBar{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+/* Menu Burger disparition */
+.nav-toggle{
+  display: none;
+}
+
+/* --------------------------------- PAGES NAVBAR ------------------------------- */
+.navItem {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+}
+.navLink {
+  font-family: 'noto sans';
+  font-weight: 500;
+  font-size: 15px;
+
+  align-items: center;
+  justify-items: center;
+  color: var(--dark-text);
+  vertical-align: middle;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0rem 2rem;
+}
+.menuEnd {
+  display: flex;
+}
+
+/* --------------------------------- Colored Active NavBar ------------------------------- */
+.navLink:hover {
+  color: var(--third-color);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+/* --------------------------------- ICON UTILISATEUR ------------------------------- */
+/* .containerIcon{
+  height: auto;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+}
+
+.fa-user {
+  color: #2a5f31;
+  font-size: 35px;
+} */
+
+/* --------------------------------- IMG Landing ------------------------------- */
+.landing{
+  position: relative;
+  margin: auto;
+  height:auto;
+  width: 90%;
+  margin-bottom: 40px;
+}
+
+.headerImg{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  /* margin-bottom: 6vh; */
+}
+.excerptHeader {
+  position: absolute;
+  font-weight: bold;
+  line-height:auto;
+  font-size: 2.5vw;
+  bottom: 0;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  width: 33vw;
+}
+
+.boldGreen {
+  font-weight: bold;
+  color:var(--third-color);
+  /* font-size:  var(--font-l); */
+  font-size: 2.5vw;
+}
+
+
+/* --------------------------------- INSCRIPTION ------------------------------- */
+
+.cont-compte{
+  min-height:calc(100vh - 170px - 80px);
+  width: 80%;
+  margin: auto;
+}
+.texte-titre{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.um input[type=submit].um-button:hover, .um a.um-button:hover {
+  background-color: #2a5f31 !important;
+}
+.um input[type=submit].um-button, .um input[type=submit].um-button:focus, .um a.um-button, .um a.um-button.um-disabled:hover, .um a.um-button.um-disabled:focus, .um a.um-button.um-disabled:active {
+  background: #2a5f31 !important;
+}
+
+.um .um-button.um-alt, .um input[type=submit].um-button.um-alt {
+  color: #fff !important;
+}
+
+
+
+/* --------------------------------- FOOTER ------------------------------- */
+footer {
+  background: linear-gradient(
+    180deg,
+    #73c14a 3.75%,
+    #82c341 36.04%,
+    #82c341 69.38%,
+    #aed35f
+  );
+  margin: 0;
+  margin-top: 50px;
+  height: auto;
+  min-height: 80px;
+  display: flex;
+  width: 100%;
+}
+
+.footerContent{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.excerptFooter {
+  color: var(--light-text);
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-rs{
+  text-decoration: none;
+}
+
+/* ------------------------ BANDEAU PRÉSENTATION ----------------------- */
+
+.presentation{
+  position: relative;
+  width: 100%;
+  display: flex;    /* Pour centrer le texte p */
+  justify-content: center;
+}
+.presentation img{
+  width: 100%;
+}
+.light-presentation{   /* texte    */
+  position:absolute;
+  top: 25%;
+  color: var(--light-text);
+  width: 70%;
+  height: 25vw;  /*  TEMPORAIRE A ENLEVER §§§§§§§§§   */
+  line-height: 1.8vw;
+  font-size: 1.2vw;
+  overflow: auto;
+  margin: auto;
+}
+
+
+
+
+#presentation-anchor{
+  position:absolute;
+  top:15%;     
+  left: 10%;  
+  color:var(--light-text);
+}
+
+a.uppercase{
+  color:var(--light-text);
+  text-transform : uppercase;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+
+
+/* PARTIE PRESENTATION FONCTIONNEMENT*/
+.functioning{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 5% auto 7% auto;
+}
+
+.left, .right {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.img-fonct, .mockup{
+  width: 100%;
+}
+
+
+.title {
+  position: relative;
+  line-height: 4vw;
+  margin-bottom: 8%;
+}
+.title::before 
+{
+content: ""; 
+position: absolute; 
+background-color:var(--secondary-color);
+width:4.5vw ;
+height: 0.5vw;
+bottom: 0;
+}
+.img-fonct, .mockup{
+  width: 100%;
+}
+
+.mockup{
+  margin-top: 0px;
+}
+
+.color-secondary-text {
+  color: var(--third-color);
+}
+
+.icon-fonct{
+  margin-bottom: 30px;
+  width: 10vw;
+}
+
+
+/* Partie Formulaire de Contact */
+
+/* Titre Contact */
+.container-contact {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  margin:  auto;
+}
+
+
+/* ---------- Formulaire de contact CONTACT FORM 7 ---------- */
+/* Taille générale du formulaire */
+.wpcf7-form {
+  margin: auto;
+  width:50%;
+  margin: 2% auto;
+  padding: 1% 3%;
+  border: solid 1px #333333;
+}
+/* Taille des lignes formulaire qui prennent la totalité de la taille */
+.containerForm{
+  width: auto;
+  margin: 2% auto;
+} 
+
+/* Style pour les lignes de formulaires qui en comportent 2 */
+.formFieldShort {
+  width: 90%;
+  margin: 2% auto;
+}
+
+.containerFormShort p{
+  display: flex;
+}
+
+.formField, .formFieldShort, .wpcf7-form-control, .wpcf7-form-control-wrap {
+  width:90%;
+  padding: 2px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Taille des lignes de formualire 'objet du mesage' et 'votre message */
+.wpcf7-form-control {
+  width: 100%;
+}
+
+/*  Style du boutton ENVOYER DU FORMULAIRE */
+.containerFormButton{
+  width: 45%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerFormButton p{
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+.containerFormButton p{
+  margin: 0 auto;
+}
+.wpcf7-submit {
+  color: var(--black-color);
+  background-color: #73C14A;
+  height: 38px;
+  width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 1px;
+  font-family: montserrat;
+  font-weight: bold;
+  border: 1px solid var(--black-color);
+  cursor: pointer;
+}
+
+.wpcf7-spinner{
+  height: 0;
+  width: 0;
+}
+
+.groupButton{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+label .dateevent,  label.nameevent{
+  font-size: 12px;
+  width: 100%;
+}
+
+.formNomEvent {
+  width: 50%;
+  margin: auto;
+}
+
+.formDateEvent{
+  width: 40%;
+  margin: auto;
+}
+
+
+
+
+/*  STYLE PAGE FONCTIONNEMENT */
+.articleInfo {
+  height: auto;
+  margin: 75px auto;
+  width: 70%;
+}
+
+.headerArticle{
+  border: solid 0.3rem var(--border-container);
+  background-color: var(--third-color);
+  height: 50px;
+  display: flex;
+  margin: 0;
+}
+
+.insideTitleArticle{
+  text-align: center;
+  width: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  gap: 1rem;
+}
+
+.titleArticle {
+  margin: 0;
+  padding: 0;
+  font-size:var(--font-m);
+  font-weight: bold;
+  color: #3e4349;
+}
+
+.insideArticleSection {
+  display: flex;
+  align-items: center;
+  height: auto;
+  flex: 1;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+.insideArticleSection p {
+  margin:auto auto auto 0;
+  line-height: normal;
+  font-size: 13px;
+}
+
+.extra-content{
+  width: 80%;
+  margin: auto;
+}
+
+.extra-content p {
+  font-size: 13px;
+}
+
+
+.imageArticle {
+  max-height: 200px;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+}
+.contentArticle{
+  display: flex;
+  width: 100%;
+  margin: 2% auto 5% auto;
+  flex-direction: row;
+}
+/* --------------------------------- CSS DES ARTICLES ------------------------------- */
+
+
+
+/* BANDEAU ESSAYEZ MAINTENANT */
+/* --------------------------------- Section TRY ------------------------------- */
+.tryItArticle{
+  margin: auto;
+  position: relative;
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgBandeauTry{
+  width: 100%;
+}
+
+.tryItContent{
+  position: absolute;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.tryTitre{
+  display: flex;
+  gap: 1rem;
+}
+
+.icon-try{
+  margin-top: 20px;
+  width: 3vw;
+  height: auto;
+  min-width: 30px;
+  min-height: 30px;
+}
+/* -------------------------- Title Essayez maintenant ------------------------ */
+.tryItTitle{
+  color:var(--light-text);
+  position: relative;
+  line-height: 6rem;
+}
+
+.tryItTitle::before {
+  content: ""; /* aucun contenu, simplement un élément de style */
+  position: absolute; /* permet de positionner l'élément de style par rapport à h1 *//* aligne l'élément de style sur la gauche du titre */ /* positionne l'élément de style au milieu du titre en hauteur */
+  width: 45%; /* la largeur de l'élément de style couvre la moitié du titre */
+  border-bottom: 6px solid #D7c22E;; /* ajoute une bordure en dessous de l'élément de style */
+  bottom:0;
+}
+
+/* -------------------------- Button "CONFIGURATEUR ICI" ------------------------ */
+.buttonTRY {
+  background-color: var(--light-button);
+  border-radius: 70px;
+  text-decoration: none;
+  font-family: 'Noto Sans';
+  padding: 1.5rem 2rem;
+  max-width: 45rem;
+  border-style: none !important;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.titleButton {
+  text-decoration: none;
+  color: var(--third-color);
+  font-size: var(--font-l);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contact {
+  width: 95%;
+  margin: 10% auto;
+}
+
+.icon-contact {
+  width: 4vw;
+  height: auto;
+  min-width: 30px;
+  min-height: 30px; 
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.text-center p {
+  font-size: 14px;
+}
+
+div.footer-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-pages a {
+  text-decoration: none;
+  color: var(--light-text);
+  font-size: 14px;
+}
+
+
+.the-content{
+  width: 80%;
+  margin: auto;
+}
+
+
+/* --------------- MEDIA QUERYS --------------- */
+/* -------------------------- Media Query > 1255px  ------------------------ */
+@media (max-width : 1255px){
+  .landing{
+    top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .navBar{
+    display: none;
+    justify-content: center;
+  }
+
+
+  .menuEnd{
+    width: 100%;
+    height: auto;
+    top: 0;
+  }
+  .navBar-active{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--border-container);
+    margin: 0 auto;
+    min-height: 100vh;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    gap: 10%;
+    top: 0;
+    left: 0;
+  }
+
+
+  .navItem{
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .navLink{
+    font-size: 18px ;
+    text-align: center;
+    width: 100%;
+    color: var(--light-text);
+    }
+
+  .menu{
+    height:80px;
+    padding: 0 0 0 5%;
+    display: flex;
+    position: fixed;
+    z-index: 9000;
+    background-color:var(--light-text);
+    width: 100%;
+  }
+  
+
+  img.usericon{
+    width: 10px;
+    height: 10px;
+  }
+/* ---------------------------------Hamburger Menu for mediaQuerys ------------------------------- */
+/* ---------------------------------Hamburger position & interraction ------------------------------- */
+.hamburger {
+  display: block;
+  position: fixed;
+  user-select: none;
+  appearance: none;
+  cursor: pointer;
+  z-index: 200;
+  right: 35px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  outline: none;
+  background: none;
+}
+
+/* ---------------------------------Hamburger lines ------------------------------- */
+.hamburger span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 7px;
+  background-color: var(--border-container);
+  border-radius: 6px;
+  transform-origin: 0 0;
+  transition: 0.4s;
+}
+
+/* ---------------------------------Hamburger Animation ------------------------------- */
+.hamburger:hover span:nth-child(2){
+  transform: translateX(10px);
+  background-color: var(--dark-orange-color);
+}
+.hamburger.is-active span:nth-child(1){
+  transform: translate(0px, -2px) rotate(45deg);
+  background-color: var(--light-text);
+}
+
+.hamburger.is-active span:nth-child(2){
+  opacity: 0;
+  transform: translateX(15px)
+}
+
+.hamburger.is-active span:nth-child(3){
+  transform: translate(-3px, 4px) rotate(-45deg);
+  background-color: var(--light-text);
+}
+
+.hamburger.is-active:hover span {
+  background-color: var(--dark-orange-color);
+}
+
+.title {
+  font-size: 25px;
+}
+
+  .tryItButton{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .buttonTRY {
+    font-size: var(--font-s);
+  }
+
+  .titleButton{
+    font-size: var(--font-m);
+  }
+
+  /* FORMULAIRE DE CONTACT PLUGIN  */
+  .wpcf7-form{
+    width: 80%;
+  }
+
+  .imageArticle{
+    max-height: 200px;
+  }
+
+
+  /* FOOTER */
+
+  .footerContent{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 10px;
+  }
+
+
+  .light-presentation {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .headerArticle{
+    height: 40px;
+  }
+
+  .titleArticle{
+    font-size: 18px;
+  }
+
+}
+
+ /*-------------------- Media Querys > 1000px -------------------- */
+  @media (max-width : 1000px){
+    .contentArticle {
+      flex-direction: column;
+    }
+    .tryItContent{
+      gap: 2rem
+    }
+    .buttonTRY{
+      padding: 0.5rem 0.5rem;
+      margin: 0;
+    }
+    .tryItTitle, .titleButton{
+      font-size: var(--font-s);
+      margin: 5px;
+    }
+    .tryItTitle{
+      line-height: 4rem;
+  }
+    .contact {
+      width: 100%;
+    }
+  
+    .conteneur-nom-mail {
+      display: flex;
+      flex-direction: column;
+    }  
+
+    .wpcf7-submit {
+      font-size: 14px;
+    }
+
+    ::placeholder {
+      color: var(--dark-text);
+    }
+  
+    .message {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .button-contact {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .container-contact {
+      width: 45%;
+    }
+
+    .text-center p {
+      font-size: 12px;
+    }
+
+  }
+
+
+  @media (max-width : 800px){
+  .tryItContent{
+    gap: 1rem
+  }
+  .titleArticle{
+    font-size: var(--font-sm);
+  }
+  .buttonTRY{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+  }
+  .buttonTRY .titleButton {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .footer-pages{
+    flex-direction: column;
+  }
+
+} 
+
+
+@media (max-width:600px) {
+  .functioning {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  section.functioning {
+    margin: 0;
+  }
+
+  .right,.left {
+    width: 80%;
+    margin: auto;
+  }
+
+  .img-fonct, .mockup {
+    width: 100%;
+  }
+
+  .mockup {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .img-fonct {
+    margin-top: 20px;
+  }
+
+  .titleArticle{
+    font-size: 16px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+
+  .color-secondary-text {
+    font-size: 13px;
+    line-height: normal;
+  }
+
+  .icon-fonct {
+    margin-bottom: 10px;
+  }
+  .light-presentation {
+    font-size: 13px;
+    line-height: normal;
+
+  }
+  #presentation-anchor {
+    margin-bottom: 10px;
+    top: 9%;
+    left: 45px;
+  }
+  #scroll_up{
+    display: none;
+  }
+
+  .try {
+    width: 100vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+img.img-try {
+    width: 80%;
+    margin: auto;
+  }
+
+  #try-anchor {
+    position: absolute;
+    top: 20%;
+    color: var(--light-text);
+  }
+
+
+
+  .icon-try {
+    width: 5vw;
+  }
+
+
+
+  button.style-button {
+    position: absolute;
+  }
+
+  button.style-button {
+    display: inline-block;
+    background-color: #E3FFDE;
+    border-radius: 50px;
+    border: 1px #E3FFDE;
+    color: #eeeeee;
+    text-align: center;
+    font-size: var(--font-m);
+    padding: 20px;
+    width: 180px;
+    height: 40px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 50px;
+    box-shadow: 4px 4px 20px rgb(23, 22, 22);
+  }
+
+  a.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: var(--font-responsive);
+    line-height: normal;
+    color: var(--secondary-text);
+    font-weight: 600;
+    margin: auto;
+    display: inherit;
+  }
+
+
+  a.button:hover {
+    color: var(--secondary-color);
+  }
+
+  .light-footer {
+    color: var(--light-text);
+  }
+
+  .icon-footer {
+    width: 3vw;
+  }
+
+
+  .containerForm, .containerFormShort{
+    margin: 20px auto;
+  }
+
+  .formField, .formFieldShort, .wpcf7-form-control-wrap {
+    height: 18px;
+    font-size: 12px;
+  }
+
+  .wpcf7-form-control{
+    font-size: 12px;
+  }
+
+
+  .containerFormButton {
+    width: 100% ;
+  }
+
+
+  .wpcf-submit {
+    width: 100%;
+  }
+
+  .excerptFooter { 
+    font-size: 14px ;
+  }
+
+  .title::before {
+    bottom: -5px
+  }
+
+  .wpcf7-submit {
+    width: 40%;
+  }
+
+
+  }
+@media  (max-width: 525px ){
+  header{
+    min-height: 60px;
+  }
+
+  .landing {
+    top: 60px;
+  }
+.menu{
+  height:60px;
+  }
+  .title{
+    font-size: 18px;
+  }
+}
+
+@media  (max-width: 375px ){
+  .wpcf7-form {
+    width: 100%;
+    border: none;
+}
+.dark, .color-secondary-text {
+  font-size: 11px;
+  line-height: normal;
+}
+
+}
